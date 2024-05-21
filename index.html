@@ -20,19 +20,25 @@
         /* max-width: 68vw; */
         height: 88%;
         overflow-y: auto;
+        font-size: smaller;
         text-align: center;
         padding: 0 20px 20px;
         margin-top: 30px;
         position: absolute;
-        font-size: 13px;
         font-weight: 500;
         /* background: burlywood; */
+        width: -webkit-fill-available;
       }
       @media (min-width: 1230px) {
         .content {
           height: 88%;
           margin-top: 35px;
-          font-size: 14px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: -webkit-fill-available;
+          font-size: medium;
         }
       }
       a {
@@ -85,7 +91,7 @@
         var output = "";
         for (var i = 0; i < 5550; i++) {
           // output += text;
-           output += text + "<br>";
+          output += text + "<br>";
         }
         output +=
           "<br>" + "<br>" + "<p>count kr le total 5550 times hai...</p>";
