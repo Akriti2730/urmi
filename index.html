@@ -17,24 +17,23 @@
         /* background-image: url("phone.png"); */
       }
       .content {
-        max-width: 68vw;
-        height: 69vh;
+        /* max-width: 68vw; */
+        height: 88%;
         overflow-y: auto;
         text-align: center;
         padding: 0 20px 20px;
         margin-top: 30px;
         position: absolute;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 500;
         /* background: burlywood; */
       }
       @media (min-width: 1230px) {
         .content {
-          height: 54vh;
+          height: 88%;
+          margin-top: 35px;
+          font-size: 14px;
         }
-      }
-      .link {
-        padding-top: 20px;
       }
       a {
         width: inherit;
@@ -52,22 +51,26 @@
 
       img {
         position: relative;
+        /* width: 90vw; */
+        height: 85vh;
       }
-
+      .scrollbar::-webkit-scrollbar {
+        width: 0px;
+      }
       .box {
         position: relative;
         width: auto;
-        border-radius: 32px;
-        background-image: url(phone.png);
+        border-radius: 45px;
+        /* background-image: url(phone.png); */
         display: inline-flex;
         background-color: burlywood;
       }
     </style>
   </head>
   <body>
-    <div class="box">
+    <div class="box scrollbar">
       <img src="./phone.png" />
-      <div class="content" id="text">
+      <div class="content scrollbar" id="text">
         <!-- Text content will be inserted here -->
       </div>
     </div>
@@ -85,12 +88,9 @@
           // output += text + "<br>";
         }
         output +=
-          "<br>" +
-          "<br>" +
-          '<p>count kr le total 5550 times hai...</p>'
-          // '<a href="https://www.instagram.com/oy_gulki_darling?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">👉 Click here to go to her Insta Id.</a>' +
-          "<br>" +
-          "<br>";
+          "<br>" + "<br>" + "<p>count kr le total 5550 times hai...</p>";
+        // '<a href="https://www.instagram.com/oy_gulki_darling?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">👉 Click here to go to her Insta Id.</a>' +
+        "<br>" + "<br>";
         // document.body.innerHTML = output;
         document.querySelector(".content").innerHTML = output;
       });
